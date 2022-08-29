@@ -1,0 +1,29 @@
+body {
+    font-family: 'Questrial', sans-serif;
+}
+
+.rodion-wrapper {
+    margin: auto;
+    max-width: 900px;
+    pad: 0 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: #4b6cb7;
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7); 
+    background: linear-gradient(to right, #182848, #4b6cb7); 
+    border-radius: 50px 0;
+}
+
+#img-man {
+    width: 400px;
+    height: 400px;
+}
+
+#subtitle {
+    font-size: large;
+}
