@@ -1,0 +1,25 @@
+.anime{
+    background-color:#ffffff;
+}
+.anime__wrap{
+    max-width:1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+.anime__image{
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+    animation: 2s linear infinite;
+}
+.anime__title{
+    text-align: center;
+    padding: 20px 0 ;
+    animation: 1s ease infinite ;
+}
+.anime__text{
+    padding-bottom: 30px;
+    animation: 5s ease-out infinite ;
+}
+
+
