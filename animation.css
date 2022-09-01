@@ -1,0 +1,145 @@
+@font-face {
+   font-family: 'Oooh Baby';
+   src: url(fonts/OoohBaby-Regular.ttf);
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Great Vibes';
+   src: url(fonts/GreatVibes-Regular.ttf);
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: 'Prata';
+   src: url(fonts/Prata-Regular.ttf);
+   font-weight: 400;
+}
+
+
+.olesia-wrapper {
+   max-width: 1170px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 15px;
+
+}
+
+.part-happiness {
+   max-width: 1000px;
+   min-height: 625px;
+   overflow: hidden;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items:flex-end;
+   justify-content: space-between;
+   position: relative;
+}
+
+.part-happiness__title {
+   font-family: 'Oooh Baby';
+   font-size: 40px;
+   padding-right: 15px;
+   color: rgb(61, 18, 18);
+}
+
+.part-happiness__title .animate__animated.animate__fadeInRight {
+   animation-duration: 4s;
+}
+
+.part-happiness__subtitle1 {
+   font-family: 'Oooh Baby';
+   font-size: 40px;
+   padding-right: 15px;
+   color: rgb(61, 18, 18);
+}
+
+.part-happiness__subtitle1 .animate__animated.animate__fadeInRight {
+   animation-duration: 4s;
+}
+
+.part-happiness__subtitle2 {
+   font-family: 'Great Vibes';
+   font-size: 40px;
+   text-transform: uppercase;
+   letter-spacing: 6px;
+   padding-right: 60px;
+   color: rgb(61, 18, 18);
+}
+
+.part-happiness__subtitle2 .animate__animated.animate__zoomIn {
+   animation-duration: 4s;
+}
+
+.part-happiness__img {
+   position: relative;
+   overflow: hidden;
+   max-width: 1000px;
+   min-height: 625px;
+}
+
+.part-happiness__img .animate__animated.animate__zoomIn {
+   animation-duration: 4s;
+}
+
+.part-happiness img {
+   position: absolute;
+   object-fit: cover;
+   width: 100%;
+   height: 100%;
+   opacity: 0.6;
+   z-index: -1;
+}
+
+
+.part-happiness__text {
+   font-family: 'Prata';
+   font-size: 25px;
+   padding-right: 15px;
+   color: rgb(61, 18, 18);
+}
+
+.part-happiness__text .animate__animated.animate__fadeInLeft {
+   animation-duration: 4s;
+}
+
+@media (max-width:768px) {
+
+   .part-happiness {
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+   }
+
+   .part-happiness__subtitle2 {
+      padding-right: 0px;
+   }
+   .part-happiness__title , .part-happiness__subtitle1 {
+      padding-right: 0px;
+   }
+
+   .part-happiness img {
+      opacity: 0.4;
+      object-position: left;
+   }
+}
+
+@media (max-width:587px) {
+
+   .olesia-wrapper {
+      padding: 5px;
+   }
+
+.part-happiness__title , .part-happiness__subtitle1 {
+      font-size: 35px;
+   }
+   .part-happiness__subtitle2 {
+      font-size: 19px;
+   }
+
+
+   .part-happiness__text {
+      font-size: 15px;
+   }
+}
