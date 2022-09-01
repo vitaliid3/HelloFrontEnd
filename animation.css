@@ -11,10 +11,6 @@ body {
   height: 100%;
   margin: 0 auto;
   display: flex;
-  background: url(img/salvador-bg.jpg);
-  background-size: 300px 300px;
-  background-repeat: no-repeat;
-  background-position: bottom right;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -80,7 +76,7 @@ body {
 .content {
   max-width: 1140px;
   width: 100%;
-  padding: 100px 0 100px 100px;
+  padding: 100px 0 100px 60px;
   display: flex;
   flex-direction: column;
 }
@@ -149,4 +145,39 @@ body {
 }
 .animated-letter15 {
   animation-delay: 1.4s;
+}
+
+.pic-sign {
+  padding-top: 30px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pic-sign img{
+  width: 350px;
+  height: 120px;
+}
+@media screen and (max-width: 768px) {
+  .urupa__wrapper {
+    display: grid;
+  }
+  .urupa__picture {
+    margin: auto;
+    --border-size: 0;
+  }
+  .urupa__title {
+    font-size: 60px;
+    padding-left: 74px;
+  }
+  .urupa__text {
+    padding-left: 30px;
+    margin-left: 130px;
+    font-size: 36px;
+  }
+  .content {
+    padding: 100px 0 100px 15px;
+  }
+  .pic-sign {
+    padding-right: 30px;
+  }
 }
