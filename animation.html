@@ -8,8 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<section>
-
+<section class="iakuba">
+    <div class="animation">
+        <div class="animation__img">
+            <picture>
+                <source srcset="img/coffee2.jpg" type="image/jpg" media="(max-width:768px)">
+                <img class="wow animate__fadeInTopLeft" data-wow-duration="2s" src="img/coffee.jpg" alt="">
+             </picture>
+        </div>
+        <div class="animation__text">
+            <div class="animation__title">
+                <h1 class="wow animate__flipInX">coffee</h1>
+            </div>
+            <div class="animation__items">
+                <div class="animation__item wow animate__fadeInUp" data-wow-delay="0s">
+                    <p>Even a bad cup of coffee is better than no coffee at all.</p>
+                </div>
+                <div class="animation__item wow animate__fadeInUp" data-wow-delay=".2s">
+                    <p>Life is like coffee, the darker it gets, the more it energizes.</p>
+                </div>
+                <div class="animation__item wow animate__fadeInUp" data-wow-delay=".4s">
+                    <p>A morning coffee is my favourite way of starting the day, settling the nerves so that they don't later fray.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+<script src="js/wow.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
