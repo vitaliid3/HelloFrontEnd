@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Qwitcher-Bold';
+  src: url(fonts/Qwitcher-Bold.woff2);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Shadow-Regular';
+  src: url(fonts/Shadow-Regular.woff2);
+  font-weight: 400;
+}
+.iakuba {
+  background: rgba(67, 58, 58, 0.858);
+}
+.iakuba .animation{
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.iakuba img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.iakuba .animation__text{
+  display: flex;
+  flex-direction: column;
+}
+.iakuba .animation__text h1{
+  text-align: center;
+  font-family: 'Qwitcher-Bold';
+  text-transform: uppercase;
+  font-size: 44px;
+  color: white;
+  margin: 50px auto;
+}
+.iakuba .animation__text .animation__items{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin: 15px 30px;
+  box-sizing: border-box;
+  border: 2px;
+  color: #000;
+  border-radius: 10px;
+}
+.iakuba .animation__text .animation__item{
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-color: rgb(246, 226, 228);
+  box-shadow: 8px 8px 24px 0px rgb(50, 51, 61);
+}
+.iakuba .animation__text .animation__item p {
+  font-family: 'Shadow-Regular';
+  font-size: 24px;
+  text-align: center;
+}
+@media (max-width: 1170px){
+  .iakuba .animation__text .animation__item p {
+    line-height: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .iakuba .animation{
+    display: flex;
+    flex-direction: column;
+  }
+  .iakuba .animation__text h1{
+    margin: 0px auto;
+  }
+}
+@media (max-width: 425px) {
+  .iakuba .animation__text .animation__items{
+    display: flex;
+    flex-direction: column;
+  }
+}
