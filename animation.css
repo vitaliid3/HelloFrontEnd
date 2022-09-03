@@ -67,82 +67,113 @@
   img {
     vertical-align: top;
   }
-  body{
-    margin: 0px auto;
-    background-image: url(img/bg.jpg);
-    background-repeat: no-repeat;
+
+  @-webkit-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-o-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @-moz-keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+  }
+  
+  @keyframes Appearance {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
   }
 
-  .content__album{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin:30px 0px 0px 20px;
-  }
-
-  h2{
-    display: block;
-    position: relative;
-    top: -400px;
-    left: 440px;
-    font-size: 30px;
-    font-family:'Roboto', sans-serif;
-    color:wheat;
-    line-height: 20px;
-  }
-
-  .album_list{
-    display: block;
-    position: relative;
-    top: -360px;
-    left: 440px;
-    color:wheat;
-  }
-
-  .album_list li{
-    margin-bottom: 35px;
-    font-size: 24px;
-    font-family: 'Purple Purse', sans-serif;
-  }
-
-  p{
-    font-size: 20px;
-    font-family: 'Roboto',sans-serif;
-    text-align: center;
-    color:wheat;
-  }
-
-  img{
-    width: 400px;
-    height: 400px;
-  }
- 
-  @keyframes animate__flip{
-    from{
-      width:400px ;
-    }
-    to{
-      width:600px;
-    }
-
-  }
-
-  .animate__flip{
-    animation: animate__flip 3s ease 3s;
-  }
-
-.animate__flipInY{
-  animation: animate__flipInY 10s ease 2s;
+.content-album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.animate__rotateIn, .animate__lightSpeedInLeft{
+.background-image {
+  position: fixed;
+  left: 0;
+  right: 0;
+  background-position:center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: url('/img/bg.jpg');
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+
+.album_info {
+  margin-top:20px;
+}
+
+h2 {
+  display: block;
+  position: relative;
+  top: -400px;
+  left: 440px;
+  font-size: 30px;
+  font-family:'Roboto', sans-serif;
+  color:wheat;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.album_list {
+  display: block;
+  position: relative;
+  top: -360px;
+  left: 470px;
+  color:wheat;
+}
+
+.album_list li {
+  margin-bottom: 35px;
+  font-size: 24px;
+  font-family: 'Purple Purse', sans-serif;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Roboto',sans-serif;
+  text-align: center;
+  color:wheat;
+}
+
+.rammstein_image {
+  width: 400px;
+  height: 400px;
+  opacity: 0.9;
+  transform: translateY(-50%);
+  position: relative;
+  top: 200px;
+  left: 10px;
+  animation-name: Appearance;
+  animation-duration: 3s;
+  animation-timing-function: cubic-bezier(.1,-.6,.2,0);
+  margin-top:50px;
+}
+ 
+.animate__flipInY {
+  animation: 10s ease 2s;
+  opacity: 0.9;
+}
+
+.animate__rotateIn, .animate__lightSpeedInLeft {
   animation: 3s ease 3s;
 }
 
-.animate__lightSpeedInRight, .animate__jackInTheBox{
+.animate__lightSpeedInRight, .animate__jackInTheBox {
   animation: 1s ease 4s;
 }
 
-.animate__hinge{
+.animate__hinge {
   animation: 1s ease 2s;
 }
