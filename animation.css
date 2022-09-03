@@ -126,11 +126,131 @@ h6 {
   text-align: center;
 }
 
-.vailenko__description{
-  font-family: Playfair Display;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: #505052;
-  text-align: center;
+.vailenko__description {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #505052;
+    text-align: center;
+}
+@font-face {
+    font-family: KeepCalm; 
+    src: url(KeepCalm-Medium.ttf); 
+   }
+   * {
+    font-family: KeepCalm, normal;
+   }
+
+body {
+    margin: 0px;
+    font-family: KeepCalm;
+    text-align: center;
+}
+
+*{margin: 0;}
+
+p {
+    margin-top: 7px;
+}
+
+.small {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.animation-hw {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 40px;  
+    position: fixed;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    -webkit-text-stroke: 1px #6e3d0579;
+}
+
+.animation-wrapper__hw {
+    height: 60px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.animation-wrapper__hw > div > div {
+    color: #FFF;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+.animation-wrapper__hw div:first-child {
+    animation: show 5s linear infinite;
+}
+
+.animation-wrapper__hw div div {
+    background:#e7e055bf;
+}
+
+.animation-wrapper__hw div:first-child div {
+    background:#45afd5c0;
+}
+
+.animation-wrapper__hw div:last-child div {
+    background:#ef964ebf;
+}
+
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+}
+
+.img-animation {
+    animation: img-animation 25s ease-in-out infinite;
+    padding: 160px 20px;
+    text-align: center;
+    background-image: url(img/ukraine.jpg);
+    background-repeat: no-repeat;    
+}
+ 
+@media (max-width: 620px) {
+    .img-animation {
+        padding: 100px 20px;
+        font-size: 26px;
+    }
+}
+@keyframes img-animation {
+    0% {
+        background-size: 120%;
+        background-position: 50% 50%
+    }
+    20% {
+        background-size: 150%;
+        background-position: 0 50%;
+    }    
+    40% {
+        background-size: 110%;
+        background-position: 20% 80%;
+    }
+    60% {
+        background-size: 160%;
+        background-position: 60% 10%;
+    }
+    80% {
+        background-size: 120%;
+        background-position: 40% 70%;
+    }    
+    100% {
+        background-size: 120%;
+        background-position: 50% 50%
+    }
 }
