@@ -146,3 +146,259 @@
 .animate__hinge{
   animation: 1s ease 2s;
 }
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  user-select: none;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  touch-action: pan-x pan-y;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url(fonts/PlayfairDisplay-Bold.ttf);
+}
+
+.wrapper{
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.vailenko{
+  background:#e4f1f8 0;
+}
+
+.vailenko__text{
+  padding: 0px 30px;
+}
+
+.vailenko__img{
+  max-width: 1170px;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  margin-bottom: 30px;
+}
+
+.vailenko__title{
+  font-family: Playfair Display;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 75px;
+  color: #5a558d;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.vailenko__description {
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #505052;
+    text-align: center;
+}
+@font-face {
+    font-family: KeepCalm; 
+    src: url(KeepCalm-Medium.ttf); 
+   }
+   * {
+    font-family: KeepCalm, normal;
+   }
+
+body {
+    margin: 0px;
+    font-family: KeepCalm;
+    text-align: center;
+}
+
+*{margin: 0;}
+
+p {
+    margin-top: 7px;
+}
+
+.small {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.animation-hw {
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 40px;  
+    position: fixed;
+    width: 100%;
+    display: block;
+    margin-top: 20px;
+    -webkit-text-stroke: 1px #6e3d0579;
+}
+
+.animation-wrapper__hw {
+    height: 60px;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.animation-wrapper__hw > div > div {
+    color: #FFF;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+}
+
+.animation-wrapper__hw div:first-child {
+    animation: show 5s linear infinite;
+}
+
+.animation-wrapper__hw div div {
+    background:#e7e055bf;
+}
+
+.animation-wrapper__hw div:first-child div {
+    background:#45afd5c0;
+}
+
+.animation-wrapper__hw div:last-child div {
+    background:#ef964ebf;
+}
+
+@keyframes show {
+    0% {margin-top:-270px;}
+    5% {margin-top:-180px;}
+    33% {margin-top:-180px;}
+    38% {margin-top:-90px;}
+    66% {margin-top:-90px;}
+    71% {margin-top:0px;}
+    99.99% {margin-top:0px;}
+    100% {margin-top:-270px;}
+}
+
+.img-animation {
+    animation: img-animation 25s ease-in-out infinite;
+    padding: 160px 20px;
+    text-align: center;
+    background-image: url(img/ukraine.jpg);
+    background-repeat: no-repeat;    
+}
+ 
+@media (max-width: 620px) {
+    .img-animation {
+        padding: 100px 20px;
+        font-size: 26px;
+    }
+}
+@keyframes img-animation {
+    0% {
+        background-size: 120%;
+        background-position: 50% 50%
+    }
+    20% {
+        background-size: 150%;
+        background-position: 0 50%;
+    }    
+    40% {
+        background-size: 110%;
+        background-position: 20% 80%;
+    }
+    60% {
+        background-size: 160%;
+        background-position: 60% 10%;
+    }
+    80% {
+        background-size: 120%;
+        background-position: 40% 70%;
+    }    
+    100% {
+        background-size: 120%;
+        background-position: 50% 50%
+    }
+}
