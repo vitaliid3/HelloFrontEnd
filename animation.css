@@ -117,3 +117,32 @@
     height: 400px;
   }
  
+  @keyframes animate__flip{
+    from{
+      width:400px ;
+    }
+    to{
+      width:600px;
+    }
+
+  }
+
+  .animate__flip{
+    animation: animate__flip 3s ease 3s;
+  }
+
+.animate__flipInY{
+  animation: animate__flipInY 10s ease 2s;
+}
+
+.animate__rotateIn, .animate__lightSpeedInLeft{
+  animation: 3s ease 3s;
+}
+
+.animate__lightSpeedInRight, .animate__jackInTheBox{
+  animation: 1s ease 4s;
+}
+
+.animate__hinge{
+  animation: 1s ease 2s;
+}
