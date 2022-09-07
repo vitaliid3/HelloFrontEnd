@@ -7,23 +7,31 @@
           user-select: none;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -34,7 +42,9 @@ html, body {
   touch-action: pan-x pan-y;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -51,7 +61,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -67,7 +78,12 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: 400;
 }
@@ -84,25 +100,30 @@ button {
   width: 100%;
   height: auto;
 }
+
 .apps__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+
 .apps__img {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .apps__img img {
   width: 100%;
   height: auto;
 }
+
 .apps__content {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
 }
+
 .apps__title {
   font-family: "Roboto";
   font-style: normal;
@@ -112,6 +133,7 @@ button {
   letter-spacing: 0.02em;
   color: #3D3D3F;
 }
+
 .apps__description {
   font-family: "Roboto";
   font-style: normal;
@@ -121,34 +143,13 @@ button {
   letter-spacing: 0.02em;
   color: rgba(61, 61, 63, 0.7);
 }
+
 .apps__market-links {
   display: flex;
   align-content: flex-start;
   width: 100%;
 }
 
-@media (max-width: 768px) {
-  .apps__wrapper {
-    padding: 0 15px;
-    grid-template-columns: 1fr;
-  }
-  .apps__content {
-    min-height: 350px;
-  }
-  .apps__content .apps__description {
-    margin: 30px 0;
-  }
-  .apps__content .apps__description p {
-    text-align: justify;
-  }
-  .apps__content .apps__market-links {
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  .apps__content .apps__market-links img {
-    max-width: 290px;
-  }
-}
 .header {
   height: 56px;
   margin-top: 15px;
@@ -235,6 +236,7 @@ button {
   align-items: center;
   padding: 0 15px;
 }
+
 .header__burger-menu .burger-menu__wrapper {
   display: flex;
   align-items: center;
@@ -242,12 +244,14 @@ button {
   width: 25px;
   height: 25px;
 }
+
 .header__burger-menu span {
   margin: auto;
   width: 25px;
   height: 2px;
   background-color: black;
 }
+
 .header__burger-menu span:before {
   content: "";
   position: absolute;
@@ -257,6 +261,7 @@ button {
   transform: translateY(-8px);
   transition: 0.4s;
 }
+
 .header__burger-menu span:after {
   content: "";
   position: absolute;
@@ -267,13 +272,16 @@ button {
   transform: translateY(8px);
   transition: 0.4s;
 }
+
 .header__burger-menu_active span {
   height: 0;
 }
+
 .header__burger-menu_active span:before {
   transform: rotate(45deg);
   width: 25px;
 }
+
 .header__burger-menu_active span::after {
   transform: rotate(-45deg);
   width: 25px;
@@ -284,6 +292,7 @@ button {
   margin-bottom: 200px !important;
   overflow: unset;
 }
+
 .header_active .header__main-menu {
   display: flex;
   align-items: center;
@@ -295,29 +304,18 @@ button {
   padding: 30px 15px;
   transition: 1s;
 }
+
 .header_active .header__main-menu ul {
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-around;
   transition: 1s;
 }
+
 .header_active .header__main-menu ul li {
   margin: 10px;
 }
 
-@media (max-width: 768px) {
-  .header__burger-menu {
-    display: flex;
-  }
-  .header__main-menu {
-    display: none;
-    height: 0;
-  }
-  .header__get-started {
-    width: 100%;
-    justify-content: flex-end;
-  }
-}
 .container {
   max-width: 1170px;
   width: 100%;
@@ -344,6 +342,7 @@ button {
 }
 
 /* *** CONTACTS *** */
+
 .first-name {
   grid-area: first-name;
 }
@@ -513,4 +512,46 @@ button {
 
 .first span:not(.classy) {
   background-color: lime;
+}
+
+@media (max-width: 768px) {
+  .apps__wrapper {
+    padding: 0 15px;
+    grid-template-columns: 1fr;
+  }
+
+  .apps__content {
+    min-height: 350px;
+  }
+
+  .apps__content .apps__description {
+    margin: 30px 0;
+  }
+
+  .apps__content .apps__description p {
+    text-align: justify;
+  }
+
+  .apps__content .apps__market-links {
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .apps__content .apps__market-links img {
+    max-width: 290px;
+  }
+
+  .header__burger-menu {
+    display: flex;
+  }
+
+  .header__main-menu {
+    display: none;
+    height: 0;
+  }
+
+  .header__get-started {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }

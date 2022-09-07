@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 /* *** Zero *** */
 * {
     padding: 0;
@@ -133,6 +134,11 @@
 
 .animate__flipInY{
   animation: animate__flipInY 10s ease 2s;
+=======
+@font-face {
+  font-family: "Barlow";
+  src: url(assets/fonts/Barlow-Regular.ttf);
+>>>>>>> Stashed changes
 }
 
 .animate__rotateIn, .animate__lightSpeedInLeft{
