@@ -1,3 +1,7 @@
-$("h1").click(function() {
-    $("body").toggleClass('active');
+$( document ).ready(function() {
+    $("#title").css("background-color", "yellow");
+});
+
+document.addEventListener("DOMContentLoaded", function(event) {
+    document.getElementById("title").style.backgroundColor = "yellow";
 });
