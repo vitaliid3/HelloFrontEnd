@@ -582,9 +582,9 @@
 // } else {
 //     console.log(false);
 // }
-let htmlDOM = document.documentElement;
-let htmlHead = document.head;
-let htmlBody = document.body;
+// let htmlDOM = document.documentElement;
+// let htmlHead = document.head;
+// let htmlBody = document.body;
 //console.log(htmlDOM);
 //console.log(htmlHead);
 //console.log(htmlBody);
@@ -658,4 +658,65 @@ let htmlBody = document.body;
 // h1.style.cssText = 'color: red; font-size: 50px';
 
 
+ // let button = document.querySelector('#button');
+//     button.style.color= 'red';
+// document.querySelector('#button').style.color= 'red';
+// function log () {
+//     console.log(123);
+//     button.removeEventListener('click', log)
+// }
+// button.addEventListener('click',log);
 
+
+
+// let options = {
+//     'capture' : false,
+//     'once' : true,
+//     'passive' : false
+// }
+//  document.addEventListener('DOMContentLoaded', function () {
+//      console.log('test');
+//  }, options);
+
+// button.addEventListener('click', function (e) {
+//      //console.log(e.type);
+//      //console.log(e.target);
+//      //console.log(e.currentTarget);
+//      //console.log(e.screenX);
+//      //console.log(e.clientX);
+//     // console.log(e);
+//     //console.log(Array.from(e.target.classList).includes('activedf'));
+// });
+// let link = document.querySelector('#link')
+// link.addEventListener('click', function (e) {
+//       e.preventDefault();
+//  });
+
+// mouseup / mousedown кнопка натиснута, кнопка відпущена
+// mouseover / mouseout  при заході- виході на елемент
+// mousemove при рухові над елементом
+//  button.addEventListener('mousemove', function () {
+//      console.log('move');
+//  });
+
+
+// keydown
+// keyup
+// document.addEventListener('keydown', function (e) {
+//     console.log(e.code + ' ' +  e.key);
+// });
+
+//scroll
+// window.addEventListener('scroll', function () {
+//     console.log(scrollY);
+// });
+
+//
+// console.log(title.innerHTML);
+// console.log(title.outerHTML);
+//
+// title.innerHTML = '<span>Hello world</span>'
+// console.log(title.innerHTML);
+//
+// title.outerHTML = '<span>Hello world</span>'
+// console.log(title.outerHTML);
