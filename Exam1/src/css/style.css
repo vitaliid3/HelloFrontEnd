@@ -88,27 +88,60 @@ h6 {
   font-weight: 400;
 }
 
-.contact-items {
+#section1,
+#section2,
+#section3,
+#section4 {
+  width: 100%;
+  height: 600px;
+}
+
+#section1 {
+  background-color: red;
+}
+
+#section2 {
+  background-color: yellow;
+}
+
+#section3 {
+  background-color: black;
+}
+
+#section4 {
+  background-color: blue;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+}
+
+header nav ul {
+  padding: 15px 0;
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  width: 100%;
-  max-width: 500px;
-  height: 300px;
-  margin: 0 auto;
+  justify-content: space-around;
 }
 
-.contact-items .contact-item input {
-  width: 100%;
-  border-radius: 5px;
-  height: 35px;
-  border: 1px solid #737171;
-  padding-left: 5px;
+header nav ul li {
+  display: flex;
 }
 
-.contact-items .contact-item label {
-  font-size: 20px;
-  margin-bottom: 5px;
-  padding-left: 2px;
+header nav ul a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul a:before {
+  content: "";
   display: block;
+  height: 10px;
+  width: 10px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-right: 5px;
 }

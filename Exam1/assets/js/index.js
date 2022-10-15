@@ -1,40 +1,88 @@
-let name = document.querySelector('#name');
-let email = document.querySelector('#email');
-let age = document.querySelector('#age');
+// $( document ).ready(function() {
+//     $("#title").css("background-color", "yellow");
+// });
+//
+// document.addEventListener("DOMContentLoaded", function(event) {
+//     document.getElementById("title").style.backgroundColor = "yellow";
+// });
+//
+// let playList = [
+//     {
+//         author: "LED ZEPPELIN",
+//         song:"STAIRWAY TO HEAVEN"
+//     },
+//     {
+//         author: "QUEEN",
+//         song:"BOHEMIAN RHAPSODY"
+//     },
+//     {
+//         author: "LYNYRD SKYNYRD",
+//         song:"FREE BIRD"
+//     },
+//     {
+//         author: "DEEP PURPLE",
+//         song:"SMOKE ON THE WATER"
+//     },
+//     {
+//         author: "JIMI HENDRIX",
+//         song:"ALL ALONG THE WATCHTOWER"
+//     },
+//     {
+//         author: "AC/DC",
+//         song:"BACK IN BLACK"
+//     },
+//     {
+//         author: "QUEEN",
+//         song:"WE WILL ROCK YOU"
+//     },
+//     {
+//         author: "METALLICA",
+//         song:"ENTER SANDMAN"
+//     }
+// ];
+// let playList2 = [];
+// document.addEventListener("DOMContentLoaded", function(event) {
+//     let newTag = document.createElement('ol');
+//     let body  = document.getElementsByTagName('body');
+//     document.body.prepend(newTag);
+//
+//     playList.forEach(function (value) {
+//         newTag.insertAdjacentHTML(
+//             'beforeend',
+//             `<li><div class="author">${value.author}</div><div class="song">${value.song}</div></li>`
+//         );
+//     });
+//
+//
+//     let li = Array.from(document.getElementsByTagName('li'));
+//     li.forEach(function (value) {
+//         let author  = value.querySelector('.author').innerHTML;
+//         let song  = value.querySelector('.song').innerHTML;
+//         let item = {
+//             'author' : author,
+//             'song' : song
+//         }
+//         playList2.push(item);
+//     })
+//     let a = 123;
+//
+//     console.log('My string ${a}');
+//     console.log(`My string ${a}`);
+//
+//     console.log('My string' + a + 'sdfsf' + a + ' 123');
+//
+//     console.log(`My string  ${a}  sdfsf ${a} 123`);
+//
+// });
 
-name.addEventListener('focusout', checkName);
-name.addEventListener('focusin', clear);
-
-email.addEventListener('focusout', checkEmail)
-name.addEventListener('focusin', clear);
-
-age.addEventListener('focusout', checkAge)
-name.addEventListener('focusin', clear);
-
-function checkName () {
-    let result = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(name.value)
-    console.log(result);
-    if (!name.value || result) {
-        error ('Text', name)
-    }
-}
-function checkEmail () {
-    email.value
-}
-function checkAge () {
-    age.value
-}
-
-function error (message, element) {
-    element.style.borderColor = 'red';
-    let newTag = document.createElement('div');
-    newTag.className = "error";
-    newTag.innerHTML = message;
-    element.after(newTag);
-}
-function clear () {
-    this.style.borderColor = '#737171';
-    if (this.nextSibling) {
-        this.nextSibling.remove();
-    }
-}
+let button = document.querySelector('.traffic-lights__button');
+let i = 0
+ button.addEventListener('click', function () {
+     i++;
+     if (i === 4) {
+        i = 0
+     }
+     console.log(i);
+     let a = document.querySelectorAll('.traffic-lights__item').getAttribute('data-color');
+     console.log(a);
+ })

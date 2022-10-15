@@ -120,6 +120,7 @@ let watch = gulp.parallel(build, watchFiles);
 
 exports.fonts = fonts;
 exports.images = images;
+exports.js = js;
 exports.css = css;
 exports.video = video;
 exports.build = build;
