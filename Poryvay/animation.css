@@ -1,0 +1,134 @@
+/*--ZERO--*/
+*{
+  padding: 0;margin: 0;
+  border: 0;
+  user-select: none;
+}
+*,*:before,*:after{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  touch-action: pan-x pan-y;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+image{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+@font-face {
+  font-family: 'Aboreto';
+  src: url('fonts/Aboreto-Regular.ttf') format('truetype');
+  src: local('Aboreto-Regular'), local('Aboreto-Regular');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato-Regular.ttf') format('truetype');
+  src: local('Lato-Regular'), local('Lato-Regular');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.wrapper {
+  background: url(image/sunukraine.jpg) no-repeat;
+  background-size: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.image-card {
+  width: 570px;
+  height: 470px;
+  border-radius: 0px 0px 0px 0px ;
+  clip-path: polygon( 100% 100%, 100% 100%, 0 10%, 0 100%, 0 100%, 100% 0, 100% 0, 15% 0);
+  animation-duration: 1s;
+}
+
+.section {
+  display: flex;
+  padding: 100px 20px 100px;
+
+}
+
+.section__about {
+ display: flex;
+ flex-direction: column;
+
+}
+
+.section__title {
+  font-family: 'Aboreto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 20px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  animation-duration: 1s;
+  margin-top: 10px;
+
+}
+
+.section__text-items {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #000000;
+  margin: 80px 0 0 30px;
+  gap: 5px;
+  display: flex;
+
+}
+
+p.text-item {
+  border-radius: 0px 0px 30px 0px;
+  background: rgb(241, 223, 61);  
+  clip-path: polygon(0 10%, 0 100%, 0 100%, 100% 100%, 100% 100%, 100% 0, 100% 0, 15% 0);
+  padding: 10px;
+
+}
+
+.text-1 {
+  animation-duration: 2s;
+}
+
+.text-2 {
+  animation-duration: 2.7s;
+}
+
+.text-3 {
+  animation-duration: 3.5s;
+}
