@@ -1,0 +1,40 @@
+.header {
+  padding: 5px 0;
+}
+
+.header .header-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 9fr 2fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.header__logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.header__nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+.header__nav ul a {
+  color: #838181;
+  font-size: 20px;
+}
+
+.header__cta button {
+  background-color: #c4cbff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 40px;
+  font-size: 16px;
+  border-radius: 40px;
+  color: #343333;
+}
+
+.header__burger-menu {
+  display: none;
+}
